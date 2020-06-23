@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(224, 241, 252);
+}
+
+button {
+    width: 90px;
+    padding: 7px;
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px #00000040;
+}
+
+.btn-container {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(248, 245, 89);
+    border: solid 4px rgb(248, 219, 89);
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.tetromino {
+    background-color: blue;
+}
+
+.mini-grid {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(248, 245, 89);
+    border: solid 4px rgb(248, 219, 89);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.mini-grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-controls {
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    width: 90px;
+    height: 60px;
+    background-color: rgb(248, 245, 89);
+    border: solid 4px rgb(248, 219, 89);
+}
+
+.mobile-controls div {
+    width: 30px;
+    height: 30px;
+}
+
+#mobileUp, #mobileLeft, #mobileRight {
+    background-color: rgb(41, 44, 214);
+}
+
+#mobileUp {
+    background-color: rgb(30, 155, 72);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#mobileLeft {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#mobileDown {
+    background-color: rgb(70, 73, 243);
+}
+
+#mobileRight {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        transform: scale(1.4);
+        padding-top: 80px;
+    }   
+}
+@media screen and (max-width: 450px) {
+    .mobile-controls {
+        display: flex;
+    }   
+}
