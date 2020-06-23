@@ -16,6 +16,7 @@ button {
     border: 0;
     border-radius: 5px;
     box-shadow: 1px 3px 5px #00000040;
+    cursor: pointer;
 }
 
 .btn-container {
@@ -104,9 +105,11 @@ button {
 }
 
 @media screen and (min-width: 800px) {
+    .btn-container {
+        margin-bottom: 80px;
+    }
     .container {
         transform: scale(1.4);
-        padding-top: 80px;
     }   
 }
 @media screen and (max-width: 450px) {
